@@ -1,7 +1,29 @@
 {
-    "name": "scrollbar-width",
-    "main": "scrollbar-width",
-    "description": "Calculate the width of the scrollbar in a browser window",
-    "version": "1.0.7",
-    "repository": "https://github.com/olmokramer/scrollbar-width.js"
+  "name": "scrollbar-size",
+  "version": "1.0.0",
+  "description": "Find the size of a scrollbar in the browser.",
+  "main": "scrollbar-size.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "start test/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olympicsoftware/scrollbar-size"
+  },
+  "keywords": [
+    "scroll",
+    "scrollbar",
+    "size",
+    "width",
+    "browser"
+  ],
+  "author": "Olympic Software",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olympicsoftware/scrollbar-size/issues"
+  },
+  "homepage": "https://github.com/olympicsoftware/scrollbar-size"
 }

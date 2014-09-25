@@ -1,4 +1,4 @@
-# [scrollbar-width.js](https://github.com/olmokramer/scrollbar-width.js) 1.0.7
+# [scrollbar-size](https://github.com/olympicsoftware/scrollbar-size) 1.0.0
 
 ## <a name="installation-usage"></a>Installation/Usage
 
@@ -6,34 +6,28 @@
 
 To install for usage with node.js
 
-    npm install scrollbar-width
+    npm install scrollbar-size
 
 Then just call once in the setup of your page
 
-    require("scrollbar-width");
+    require("scrollbar-size");
 
-A global variable `window.SCROLLBAR_WIDTH` will then be available.
+A global function `window.scrollbarSize` will then be available which will
+return the width of scrollbars for the running platform.
 
 ### Browser
 
-To install in the browser just add scrollbarWidth.js to your project and include it in your html.
-A global variable `window.SCROLLBAR_WIDTH` will then be available.
+To install in the browser just add scrollbar-size.js to your project and include
+it in your html. A global function `window.scrollbarSize` will then be
+available.
 
 ### Notes
 
-The function will run when one of these events is triggered, and before that the variable will not be available
+The function will return undefined if it is called before the document is ready.
 
-    doc.addEventListener('DOMContentLoaded');
-    window.addEventListener('load');
-    doc.attachEvent('onreadystatechange');
-    window.attachEvent('onload');
-
-## <a name="compatibility"></a>Compatibility
-
-Tested in and compatible with:
-- Chrome (35.0.1916.153)
-- FireFox (IceWeasel 30.0)
-- IE (8+)
+The size of the scrollbar is only calculated the first time the function is
+called. If your platform has scrollbars that resize, this module will not work
+for you.
 
 ## <a name="issues"></a>Issues
 
@@ -42,4 +36,4 @@ If you have any issues, you can file an issue on the
 
 ## <a name="license"></a>License
 
-scrollbarWidth is licensed under the [MIT license](LICENSE).
+scrollbar-size is licensed under the [MIT license](LICENSE).

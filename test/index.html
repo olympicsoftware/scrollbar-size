@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>scrollbar width</title>
-    <script type="text/javascript" src="../scrollbar-width.js"></script>
+    <title>scrollbar size</title>
+    <script type="text/javascript" src="../scrollbar-size.js"></script>
     <script type="text/javascript">
+        var unreadyWidth = window.scrollbarSize();
+
         window.onload = function() {
-            document.getElementById("scrollbarwidth").innerHTML = window.SCROLLBAR_WIDTH;
+            var readyWidth = window.scrollbarSize();
+            var readyWidthCached = window.scrollbarSize();
+
+            document.getElementById("unreadyWidth").innerHTML = unreadyWidth;
+            document.getElementById("scrollbarwidth").innerHTML = readyWidth;
+            document.getElementById("cachedscrollbarwidth").innerHTML = readyWidthCached;
         };
     </script>
 </head>
 <body>
+    scrollbarwidth before document is ready is: <p id="unreadyWidth"></p> 
     scrollbarwidth is: <p id="scrollbarwidth"></p>
+    cached scrollbarwidth us: <p id="cachedscrollbarwidth"></p>
 </body>
 </html>
