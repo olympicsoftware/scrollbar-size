@@ -8,12 +8,12 @@ To install for usage with node.js
 
     npm install scrollbar-size
 
-Then just call once in the setup of your page
+Then just require the module:
 
-    require("scrollbar-size");
+    var scrollbarSize = require("scrollbar-size");
 
-A global function `window.scrollbarSize` will then be available which will
-return the width of scrollbars for the running platform.
+The function `scrollbarSize` will return the width of scrollbars for the running
+platform.
 
 ### Browser
 
