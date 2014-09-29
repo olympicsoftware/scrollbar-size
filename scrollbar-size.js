@@ -13,7 +13,7 @@
         if (scrollbarSize !== null)
             return scrollbarSize;
 
-        if (window.document.readyState !== "complete")
+        if (window.document.readyState === "loading")
             return void 0;
 
         var div1, div2;
