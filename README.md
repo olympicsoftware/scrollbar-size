@@ -32,7 +32,7 @@ for you.
 ## <a name="issues"></a>Issues
 
 If you have any issues, you can file an issue on the
-[github page](https://github.com/olmokramer/scrollbar-width.js/issues).
+[github page](https://github.com/olympicsoftware/scrollbar-size/issues).
 
 ## <a name="license"></a>License
 
