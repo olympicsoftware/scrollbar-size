@@ -1,4 +1,4 @@
-# [scrollbar-size](https://github.com/olympicsoftware/scrollbar-size) 1.0.3
+# [scrollbar-size](https://github.com/olympicsoftware/scrollbar-size)
 
 ## <a name="installation-usage"></a>Installation/Usage
 
