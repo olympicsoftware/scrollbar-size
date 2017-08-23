@@ -1,1 +1,2 @@
-export declare const scrollbarSize: () => number | undefined;
+declare const scrollbarSize: () => number | undefined;
+export default scrollbarSize;
