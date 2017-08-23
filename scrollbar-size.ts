@@ -1,4 +1,4 @@
-export default function scrollbarSize(): () => number | undefined {
+export const scrollbarSize: () => number | undefined = (function scrollbarSize(): () => number | undefined {
   let scrollbarSize: number;
 
   return function calculateSize(): number | undefined {
@@ -27,4 +27,4 @@ export default function scrollbarSize(): () => number | undefined {
 
     return scrollbarSize;
   };
-}
+})();

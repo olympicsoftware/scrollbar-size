@@ -9,7 +9,7 @@
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    function scrollbarSize() {
+    exports.scrollbarSize = (function scrollbarSize() {
         var scrollbarSize;
         return function calculateSize() {
             if (scrollbarSize !== undefined) {
@@ -30,7 +30,6 @@
             window.document.body.removeChild(div2);
             return scrollbarSize;
         };
-    }
-    exports.default = scrollbarSize;
+    })();
 });
 //# sourceMappingURL=scrollbar-size.js.map
