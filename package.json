@@ -2,11 +2,13 @@
   "name": "scrollbar-size",
   "version": "1.0.4",
   "description": "Find the size of a scrollbar in the browser.",
-  "main": "scrollbar-size.js",
+  "main": "./dist/scrollbar-size.js",
+  "types": "./dist/scrollbar-size.d.ts",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "build": "tsc",
     "test": "start test/index.html"
   },
   "repository": {
@@ -25,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/olympicsoftware/scrollbar-size/issues"
   },
-  "homepage": "https://github.com/olympicsoftware/scrollbar-size"
+  "homepage": "https://github.com/olympicsoftware/scrollbar-size",
+  "devDependencies": {
+    "typescript": "^2.4.2"
+  }
 }
