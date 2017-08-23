@@ -1,18 +1,28 @@
-export default function scrollbarSize(): number {
-  const div1: HTMLDivElement = window.document.createElement("div");
-  const div2: HTMLDivElement = window.document.createElement("div");
+const scrollbarSize: () => number = (function(): () => number {
+  let scrollbarSize: number;
 
-  div1.style.width = "100px";
-  div1.style.overflowX = "scroll";
-  div2.style.width = "100px";
+  return function(): number {
+    if (scrollbarSize != null) {
+      return scrollbarSize;
+    }
 
-  window.document.body.appendChild(div1);
-  window.document.body.appendChild(div2);
+    const div1: HTMLDivElement = window.document.createElement("div");
+    const div2: HTMLDivElement = window.document.createElement("div");
 
-  const scrollbarSize: number = div1.offsetHeight - div2.offsetHeight;
+    div1.style.width = "100px";
+    div1.style.overflowX = "scroll";
+    div2.style.width = "100px";
 
-  window.document.body.removeChild(div1);
-  window.document.body.removeChild(div2);
+    window.document.body.appendChild(div1);
+    window.document.body.appendChild(div2);
 
-  return scrollbarSize;
-}
+    scrollbarSize = div1.offsetHeight - div2.offsetHeight;
+
+    window.document.body.removeChild(div1);
+    window.document.body.removeChild(div2);
+
+    return scrollbarSize;
+  };
+})();
+
+export default scrollbarSize;

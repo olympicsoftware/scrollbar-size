@@ -17,6 +17,14 @@ console.log(sizeOfScrollbar); // usually ~20
 
 ```
 
+### Notes
+
+The function will return undefined if it is called before the document is ready.
+
+The size of the scrollbar is only calculated the first time the function is
+called. If your platform has scrollbars that resize, this module will not work
+for you.
+
 ## Credits
 
 Thanks to [olmokramer](https://github.com/olmokramer/) for the initial

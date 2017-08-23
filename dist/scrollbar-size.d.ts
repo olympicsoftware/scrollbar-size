@@ -1,1 +1,2 @@
-export default function scrollbarSize(): number;
+declare const scrollbarSize: () => number;
+export default scrollbarSize;
