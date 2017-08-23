@@ -1,0 +1,11 @@
+{
+  "files": ["scrollbar-size.ts"],
+  "compilerOptions": {
+    "strict": true,
+    "module": "umd",
+    "target": "es5",
+    "declaration": true,
+    "outDir": "dist",
+    "sourceMap": true
+  }
+}

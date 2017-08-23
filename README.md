@@ -1,4 +1,4 @@
-# [scrollbar-size](https://github.com/olympicsoftware/scrollbar-size) 1.0.3
+# [scrollbar-size](https://github.com/olympicsoftware/scrollbar-size) 1.0.4
 
 ## <a name="installation-usage"></a>Installation/Usage
 
@@ -6,7 +6,7 @@
 
 To install for usage with node.js
 
-    npm install scrollbar-size
+    npm install --save scrollbar-size
 
 Then just require the module:
 
@@ -14,12 +14,6 @@ Then just require the module:
 
 The function `scrollbarSize` will return the width of scrollbars for the running
 platform.
-
-### Browser
-
-To install in the browser just add scrollbar-size.js to your project and include
-it in your html. A global function `window.scrollbarSize` will then be
-available.
 
 ### Notes
 
