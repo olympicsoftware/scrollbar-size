@@ -1,6 +1,6 @@
 {
   "name": "scrollbar-size",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Find the size of a scrollbar in the browser.",
   "main": "./dist/scrollbar-size.js",
   "types": "./dist/scrollbar-size.d.ts",
